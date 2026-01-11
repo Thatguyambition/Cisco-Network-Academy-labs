@@ -1,0 +1,17 @@
+! East Router Configuration
+! Applied VLSM addressing based on host requirements
+
+interface g0/0
+ description LAN ES-1
+ ip address 10.1.1.97 255.255.255.240
+ no shutdown
+
+interface g0/1
+ description LAN ES-2
+ ip address 10.1.1.65 255.255.255.224
+ no shutdown
+
+interface s0/0/0
+ description WAN Link to West
+ ip address 10.1.1.121 255.255.255.252
+ no shutdown
