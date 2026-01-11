@@ -1,0 +1,17 @@
+! DNS Verification Commands performed on Windows CLI
+
+! Task 1: Check IP connectivity and resolve URL
+ping www.cisco.com
+
+! Task 2: Enter nslookup interactive mode
+nslookup
+! Default Server: [Internal DNS Server Address]
+
+! Task 3: Query specific web server
+set type=a
+www.google.com
+
+! Task 4: Query for Mail Servers
+set type=mx
+cisco.com
+! Results show mail exchanger preference and addresses
